@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="makeGreen()">Make Green</button>
+    <button id="make-pink">Make Pink</button>
+    <input type="email" id="user-email">
+
+    <script>
+        //Option-1........
+        function makeGreen(){
+            document.body.style.backgroundColor ='green';
+        }
+        //Option-2..........
+        document.getElementById('make-pink').addEventListener('click',function(){
+            document.body.style.backgroundColor = 'pink';
+        })
+        //keyup enent.....
+        document.getElementById('user-email').addEventListener('keyup',function(event){
+            console.log(event.target.value);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM EVENTS</title>
+</head>
+<body>
+    
+        <h1 onclick="console.log('I am Rasel')">DOM er ajke special events</h1>
+        <button onclick="console.log(7)">Click Me</button>
+        <button onclick="console.log(85)">submit</button>
+        <br>
+        <button onclick="document.body.style.backgroundColor='Yellow'">Make Yellow</button>
+         <button onclick="makeRed()">Make Red</button>
+         <button id="make-blue">Make Blue</button>
+         <button id="goldenrod">Goldenrod</button>
+         
+    
+
+<script src="event.js"></script>
+    <script>
+       document.getElementById('goldenrod').addEventListener('click',function(){
+        document.body.style.backgroundColor ='goldenrod';
+       })
+    </script>
+</body>
+</html>

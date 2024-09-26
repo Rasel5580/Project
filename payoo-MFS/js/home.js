@@ -12,10 +12,20 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
     const pinNumber = document.getElementById('input-pin').value;
     console.log(pinNumber);
 
-    if(pinNumber === '50'){
-       
+    // verify pin number...
+    if(pinNumber === '1234'){
+       const balance = document.getElementById('account-balance').innerText;
+       console.log(balance);
+
+       // step-5: add addMoney with balance...
+       const addMoneyNumber = parseFloat(addMoney);
+       const balanceNumber = parseFloat(balance);
+       const newBalance = balanceNumber + addMoneyNumber;
+       console.log(newBalance);
+
+       document.getElementById('account-balance').innerText = newBalance;
     }
     else{
-        alert('Wrong Pin');
+        alert('Invalid  Pin');
     }
 })
